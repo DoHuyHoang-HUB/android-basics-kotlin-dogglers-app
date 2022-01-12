@@ -53,8 +53,8 @@ class DogCardAdapter(
         val dog = dataset[position]
         if (resources != null) {
             holder.itemTitle.text = dog.name
-            holder.itemAge.text = resources.getString(R.string.dog_hobbies, dog.hobbies)
-            holder.itemHobbies.text = resources.getString(R.string.dog_age, dog.age)
+            holder.itemHobbies.text = resources.getString(R.string.dog_hobbies, dog.hobbies)
+            holder.itemAge.text = resources.getString(R.string.dog_age, dog.age)
         }
 
         holder.itemImage.setImageResource(dog.imageResourceId)
